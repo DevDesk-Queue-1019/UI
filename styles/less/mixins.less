@@ -1,0 +1,23 @@
+// Mixins in here
+// Parametric Mixins 
+.customize(@justify, @align, @font-size) {
+	display: flex;
+	justify-content: @justify;
+	align-items: @align;
+  font-size: @font-size;
+}
+
+.button() {
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: white;
+  cursor: progress;
+  text-align: center;
+  font-size: 16px;
+  background: @eastern-blue;
+
+  &:hover {
+  // The compiled color returned is #004d4d 
+    background-color: darken(teal, 10%)
+  }
+}
