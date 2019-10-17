@@ -306,8 +306,6 @@ template {
 }
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
   max-width: 100%;
   border: 1px solid white;
 }
@@ -329,13 +327,13 @@ section {
 }
 /*********** HEADER STYLES HERE *************/
 header {
-  height: 43vh;
+  height: 73vh;
   background-color: black;
 }
 header #home div {
   background-color: black;
 }
-header .mike {
+header .logo {
   width: 90%;
   margin-left: 190px;
   margin-right: 90px;
@@ -366,7 +364,7 @@ header .LogoContainer {
   padding: 0;
 }
 header .links {
-  width: 40%;
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -376,21 +374,33 @@ header #cta {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin-bottom: 0;
+  padding-top: 20px;
   height: 100%;
 }
 header #cta div {
   background-color: #690217;
   width: 80%;
-  padding: 0;
+  margin-top: 20px;
 }
-header .middle_box {
-  display: flex;
+header .first_box {
+  display: inline-grid;
   justify-content: flex-end;
-  align-self: flex-end;
   width: 80%;
+}
+header .middl_box {
   padding: 0;
+  margin: 0;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+header ul {
+  width: 100%;
+  color: #ffffff;
+  font-size: 3rem;
+  text-align: center;
+  padding-right: 5rem;
 }
 header button {
   align-self: center;
@@ -452,24 +462,32 @@ section {
   align-items: center;
 }
 #about div {
-  background-color: #BB1333;
+  background-color: #feb562;
   width: 80%;
 }
 #about h2 {
   color: #ffffff;
 }
-/*********** SKILLS STYLES HERE *************/
-#skills {
+/*********** DEV DESK STYLES HERE *************/
+#devDesk {
   text-align: center;
 }
-.skillsContainer {
+#devDesk p {
+  text-align: justify;
+}
+.devContainer {
   display: flex;
   justify-content: space-around;
   text-align: center;
 }
-.skillsContainer div {
+.devContainer div {
   width: 20%;
 }
-#skills p {
-  text-align: justify;
+.devContainer2 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.devContainer2 div {
+  width: 20%;
 }

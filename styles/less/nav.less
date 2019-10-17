@@ -1,7 +1,5 @@
 *{
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
   max-width: 100%;
   border: 1px solid white;
 }
@@ -22,13 +20,13 @@ section{
 
 /*********** HEADER STYLES HERE *************/
 header{
-  height: 43vh;
+  height: 73vh;
   background-color: black;
 
   #home div{
     background-color: black;
   }
-  .mike{
+  .logo{
     width: 90%;
     margin-left: 190px;
     margin-right: 90px;
@@ -59,7 +57,7 @@ header{
     padding: 0;
   }
   .links{
-    width: 40%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -69,23 +67,34 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    margin-bottom: 0;
+    padding-top: 20px;
     height: 100%;
   }
   #cta div{
     background-color: #690217;
     width: 80%;
-    padding: 0;
+    margin-top: 20px;
   }
-  .middle_box{
-    display: flex;
+  .first_box{
+    display: inline-grid;
     justify-content: flex-end;
-    align-self: flex-end;
     width: 80%;
-    padding: 0;
   }
-
+  .middl_box{
+    padding: 0;
+    margin: 0;
+  }
+  h1{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  ul{
+    width: 100%;
+    color: #ffffff;
+    font-size: 3rem;
+    text-align: center;
+    padding-right: 5rem;
+  }
   button {
       align-self: center;
       display: inline-block;
