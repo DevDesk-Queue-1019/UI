@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background: #f0f4f7;
+  font-family: 'Helvetica Neue';
+}
+a {
+  text-decoration: none;
+}
+.nav-section {
+  border-top: 10px solid #bb1333;
+  background: #13131f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  z-index: -1;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 170px;
+  border-top: 10px solid #bb1333;
+  background: #13131f;
+  padding: 20px;
+}
+nav .logo {
+  max-width: 220px;
+}
+nav .logo img {
+  max-width: 220px;
+}
+nav ul {
+  display: flex;
+}
+nav ul a {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+nav ul li {
+  display: flex;
+  height: 160px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li:hover {
+  background: #222236;
+}
+header {
+  display: flex;
+  max-width: 1000px;
+  height: 430px;
+  margin: 0 auto;
+  background: #62172b;
+}
+header .ctal {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+header .ctar {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+header .ctar .devdesk {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: white;
+}
+header .ctar .queue {
+  font-size: 6.7rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 50px;
+}
+header .ctar a {
+  color: white;
+}
+header .ctar a .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 70px;
+  padding: 20px;
+  background: #bb1333;
+}
+header .ctar a .button:hover {
+  background: #9e162f;
+}
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.about .container {
+  display: flex;
+  padding: 30px;
+}
+.about .container .about-text {
+  font-size: 1.5rem;
+  font-weight: 200;
+  width: 50%;
+}
+.about .container .about-text p {
+  margin-bottom: 20px;
+}
+.about .container .about-img {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.about .container .about-img img {
+  max-width: 350px;
+}
