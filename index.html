@@ -1,87 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Responsive Website</title>
-  <script src="https://kit.fontawesome.com/703be0d147.js" crossorigin="anonymous"></script>
-  <!--this is the link to google gonts-->
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat&display=swap" rel="stylesheet">
-  <!--this is the link to less-->
-  <link rel="stylesheet/less" type="text/css" href="styles/less/index.less" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
-</head>
-<body>
-  <header id="home">
-    <nav class="logo">
-      <div class="LogoContainer">
-        <img src="styles/images/LambdaSchool.png" alt="Lambda's logo'">
-        <h1>Dev Desk Queue</h1>
-      </div>
-      <div class="links">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#about">FEATURES</a>
-        <a href="#skills">CONTACT</a>
-      </div>
-    </nav>
-    <div>
-    <section id="cta">
-        <div class="first_box">
-          <div class="middle_box">
-            <h1>DEV DESK</h1>
-            <ul>QUEUE</ul>
-            <button>Get Started</button>
-          </div>
-        </div>
-      </section>
-  </header>
-  <section id="about">
-    <div>
-      <h2>For Students and Helpers at Lambda School</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At animi earum, modi amet laboriosam nam laudantium laborum fuga quas sapiente, accusantium quis minus nemo molestiae? Dicta eum qui voluptatum debitis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quasi, optio incidunt in modi voluptate! Vero asperiores, illo ab soluta delectus voluptas quam ipsum quo rem possimus reprehenderit, fuga id!</p>
-    </div>
-  </section>
-  <section id="devDesk">
-    <h2>Our Features</h2>
-    <div class="devContainer"><!--This opens the big container-->
-      <div><!--Opens first container-->
-        <i class="fab fa-html5"></i>
-        <h3>Help Desk</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ut, ducimus asperiores sunt voluptates iste eos commodi odit voluptas, quam facere quae odio vel placeat tempora error vitae alias consectetur!</p>
-      </div><!--Closes first container-->
-      <div><!--Opens second container-->
-        <i class="fab fa-css3-alt"></i>
-        <h3>Tickets</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deserunt commodi ratione consequuntur soluta, aliquid explicabo maiores illo. Odio blanditiis officiis consectetur. Laboriosam ea impedit aliquam laborum, nobis placeat recusandae.</p>
-      </div><!--Closes second container-->
-      <div><!--Opens third container-->
-        <i class="fab fa-js-square"></i>
-        <h3>Backlog</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fugiat cupiditate laborum beatae earum veritatis? Sint ad quam debitis voluptate consequatur unde assumenda error asperiores laborum, sequi iste, esse nostrum.</p>
-      </div><!--Closes third container-->
-    </div><!--This closes the big container-->
-    <div class="devContainer2"><!--This opens the second big container-->
-      <div><!--Opens Second Row - first container-->
-          <i class="fab fa-html5"></i>
-          <h3>FAQ</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ut, ducimus asperiores sunt voluptates iste eos commodi odit voluptas, quam facere quae odio vel placeat tempora error vitae alias consectetur!</p>
-        </div><!--Closes first container-->
-        <div><!--Opens second container-->
-          <i class="fab fa-css3-alt"></i>
-          <h3>User Manual</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deserunt commodi ratione consequuntur soluta, aliquid explicabo maiores illo. Odio blanditiis officiis consectetur. Laboriosam ea impedit aliquam laborum, nobis placeat recusandae.</p>
-        </div><!--Closes second container-->
-        <div><!--Opens third container-->
-          <i class="fab fa-js-square"></i>
-          <h3>Helpers</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fugiat cupiditate laborum beatae earum veritatis? Sint ad quam debitis voluptate consequatur unde assumenda error asperiores laborum, sequi iste, esse nostrum.</p>
-        </div><!--Closes Second Row third container-->
-    </div><!--This closes the second big container-->
-  </section>
-  <section id="video">
-    <iframe src="https://www.youtube.com/embed/gLdXxFS8BV4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </section>
-</body>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lambda School - Web Dev Queue</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="nav-section"></div> <!-- THIS DIV SPANS THE FULL WIDTH OF THE SCREEN BEHIND THE NAV AND HEADER WITH A Z-INDEX OF 1 TO PUT IT BEHIND THEM-->
+            <nav>
+                <div class="logo">
+                   <img src="img/devdesk-logo.png" alt="Lamba School Logo"> 
+                </div> 
+                <ul>
+                    <a href="#home"><li>home</li></a>
+                    <a href="#home"><li>about</li></a>
+                    <a href="#home"><li>features</li></a>
+                    <a href="#home"><li>contact</li></a>
+                </ul>
+            </nav>            
+
+
+            <header>
+                <div class="ctal">
+                    <img src="img/shield.png" alt="">
+                </div>
+                <div class="ctar">
+                    <p class="devdesk">dev desk</p>
+                    <p class ="queue">queue</p>
+                    <a href="#app"><span class="button">Get Started</span></a>
+                </div>
+            </header>
+
+            <section class="about">
+                <div class="container">
+                    <div class="about-text">
+                    <p>
+                            Dev Desk Queue is a fully featured ticket queue system for Lambda School students that allows helpers to handle help inquiries with the students.
+                    </p>
+
+                    <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                    </p>                    
+                    </div>
+
+                    <div class="about-img">
+                        <img src="img/place_holder.png" alt="place holder">
+                    </div>                    
+                </div>
+            </section>
+        
+        <script src="" async defer></script>
+    </body>
 </html>

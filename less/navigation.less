@@ -1,0 +1,53 @@
+.nav-section { // DARK PURPLE BACKGROUND WITH RED BORDER AT TOP THAT SPANS THE FULL WIDTH BEHIND THE NAVBAR AND HEADER
+    border-top: 10px solid @button-bg;
+    background: @header-bg;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:600px;
+    z-index: -1;
+}
+
+    nav { // NAV BAR WITH SPACE BETWEEN TO ADD LOTS OF SPACE BETWEEN LOGO AND NAV LINKS
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1000px;
+        height: 170px;
+        border-top: 10px solid @button-bg;
+        background: @header-bg;
+        padding: 20px;
+            
+        .logo { // LOGO ON LEFT SIDE OF NAV BAR
+            max-width: 220px;
+                img {
+                    max-width: 220px;
+                }
+        }
+
+            ul {
+                display: flex;
+
+                    a {
+                        text-transform: uppercase;
+                        color: white;
+                        font-weight: 300;
+                        font-size: .8rem;
+                    }
+
+                        li { // LIST ITEMS WRAPPED IN <a> TAGS TO MAKE THEM CLICKABLE AS LINKS AS OPPOSED TO JUST THE TEXT-LINKS
+                            display: flex;
+                            height: 160px;
+                            width: 100px;
+                            justify-content: center;
+                            align-items: center;
+
+                            &:hover {
+                                background: @nav-hover;
+                            }
+
+                    }
+            }
+    }
