@@ -306,10 +306,8 @@ template {
 }
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
   max-width: 100%;
-  border: 1px grey;
+  border: 1px solid white;
 }
 /*********** GENERAL STYLES HERE *************/
 body {
@@ -318,11 +316,9 @@ body {
 }
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  color: #feb562;
+  color: #ffffff;
   text-align: center;
   padding: 2% 0;
 }
@@ -331,64 +327,108 @@ section {
 }
 /*********** HEADER STYLES HERE *************/
 header {
-  height: 70vh;
-  background-image: url('../images/header.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  height: 73vh;
+  background-color: black;
 }
-nav {
+header #home div {
+  background-color: black;
+}
+header .logo {
+  width: 90%;
+  margin-left: 190px;
+  margin-right: 90px;
+}
+header .links div {
+  background-color: #feb562;
+  width: 60%;
+}
+header .links h2 {
+  color: #ffffff;
+}
+header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-nav a {
-  color: #feb562;
+header nav a {
+  color: #ffffff;
   text-decoration: none;
 }
-nav a:hover {
+header nav a:hover {
   color: #2f2c4b;
 }
-.LogoContainer {
-  width: 10%;
+header .LogoContainer {
+  border-top-color: #BB1333;
+  width: 20%;
+  background-color: black;
+  padding: 0;
 }
-.links {
-  width: 30%;
+header .links {
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 0;
 }
-.titles div {
-  width: 40%;
-}
-/*********** ABOUT STYLES HERE *************/
-#about {
-  background-color: #cd4427;
+header #cta {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
+  height: 100%;
 }
-#about div {
-  background-color: #feb562;
-  width: 60%;
+header #cta div {
+  background-color: #690217;
+  width: 80%;
+  margin-top: 20px;
 }
-#about h2 {
+header .first_box {
+  display: inline-grid;
+  justify-content: flex-end;
+  width: 80%;
+}
+header .middl_box {
+  padding: 0;
+  margin: 0;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+header ul {
+  width: 100%;
   color: #ffffff;
-}
-/*********** SKILLS STYLES HERE *************/
-#skills {
+  font-size: 3rem;
   text-align: center;
+  padding-right: 5rem;
 }
-.skillsContainer {
-  display: flex;
-  justify-content: space-around;
+header button {
+  align-self: center;
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #BB1333;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
   text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
-.skillsContainer div {
-  width: 20%;
+header button:hover,
+header button:focus {
+  background: #2f2c4b;
 }
-#skills p {
-  text-align: justify;
+header button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+header button:active {
+  transform: scale(0.99);
 }
 /*********** VIDEO STYLES HERE *************/
 #video {
@@ -398,4 +438,56 @@ nav a:hover {
 iframe {
   width: 100%;
   height: 100%;
+}
+/*********** GENERAL STYLES HERE *************/
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 2;
+}
+h3,
+h4 {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: black;
+  text-align: center;
+  padding: 2% 0;
+}
+section {
+  padding: 4% 0;
+}
+/*********** ABOUT STYLES HERE *************/
+#about {
+  background-color: #690217;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about div {
+  background-color: #feb562;
+  width: 80%;
+}
+#about h2 {
+  color: #ffffff;
+}
+/*********** DEV DESK STYLES HERE *************/
+#devDesk {
+  text-align: center;
+}
+#devDesk p {
+  text-align: justify;
+}
+.devContainer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.devContainer div {
+  width: 20%;
+}
+.devContainer2 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.devContainer2 div {
+  width: 20%;
 }
