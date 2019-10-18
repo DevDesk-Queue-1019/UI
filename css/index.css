@@ -170,7 +170,7 @@ nav ul a {
   text-transform: uppercase;
   color: white;
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 nav ul li {
   display: flex;
@@ -232,53 +232,56 @@ header .ctar a .button:hover {
 }
 .about {
   max-width: 1000px;
-  height: 70vh;
+  height: 500px;
   margin: 0 auto;
 }
 .about .container {
   display: flex;
-  padding: 30px;
+  justify-content: space-between;
+  padding: 40px;
 }
 .about .container .about-text {
   font-size: 1.5rem;
   font-weight: 200;
-  width: 50%;
+  width: 48%;
 }
 .about .container .about-text p {
   margin-bottom: 20px;
 }
 .about .container .about-img {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
+  width: 48%;
+  text-align: right;
 }
 .about .container .about-img img {
-  max-width: 350px;
+  width: 300px;
 }
-.features {
+.feature-section {
+  background: #62172b;
+}
+.feature-section .features {
   max-width: 1000px;
   margin: 0 auto;
 }
-.features .feature-title {
+.feature-section .features .feature-title {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
 }
-.features .feature-title p {
+.feature-section .features .feature-title p {
   font-size: 5rem;
-  color: #bb1333;
+  color: #fff;
   font-weight: 100;
   text-transform: uppercase;
 }
-.features .container {
+.feature-section .features .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   height: 600px;
   padding: 10px;
 }
-.features .container .box {
+.feature-section .features .container .box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,5 +292,13 @@ header .ctar a .button:hover {
   width: 250px;
   height: 200px;
   background: #dfdfdf;
-  border-top: 10px solid #bb1333;
+}
+.feature-section .features .container .box:hover {
+  background: #13131f;
+  color: white;
+  transition: 0.4s ease-in-out;
+  width: 250px;
+  height: 200px;
+  background-image: url('../img/shield.png');
+  background-size: contain;
 }
