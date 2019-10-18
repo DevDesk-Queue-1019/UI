@@ -232,6 +232,7 @@ header .ctar a .button:hover {
 }
 .about {
   max-width: 1000px;
+  height: 70vh;
   margin: 0 auto;
 }
 .about .container {
@@ -253,4 +254,40 @@ header .ctar a .button:hover {
 }
 .about .container .about-img img {
   max-width: 350px;
+}
+.features {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.features .feature-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.features .feature-title p {
+  font-size: 5rem;
+  color: #bb1333;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.features .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 600px;
+  padding: 10px;
+}
+.features .container .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 20px;
+  margin-bottom: 50px;
+  width: 250px;
+  height: 200px;
+  background: #dfdfdf;
+  border-top: 10px solid #bb1333;
 }

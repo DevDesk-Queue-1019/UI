@@ -54,8 +54,11 @@ header { // MAIN HEADER
         }
 } // HEADER END HERE
 
-.about {
+
+
+.about { // ABOUT SMALL SECTION
     max-width: 1000px;
+    height: 70vh;
     margin: 0 auto;
 
     .container {
@@ -80,6 +83,50 @@ header { // MAIN HEADER
             img {
             max-width: 350px;
             }
+        }
+    }
+} //END ABOUT
+
+// FEATURES
+
+
+.features {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .feature-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+
+        p {
+            font-size: 5rem;
+            color: @button-bg;
+            font-weight: 100;
+            text-transform: uppercase;
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 600px;
+        padding: 10px;
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            padding: 10px;
+            margin: 20px;
+            margin-bottom: 50px;
+            width: 250px;
+            height: 200px;
+            background: #dfdfdf;
+            border-top: 10px solid @button-bg;
         }
     }
 }
