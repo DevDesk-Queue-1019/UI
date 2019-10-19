@@ -1,3 +1,11 @@
+.form-elements {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c5c3cf;
+  margin-top: 9px;
+  margin-bottom: 16px;
+  color: #000;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -180,11 +188,41 @@ nav ul li {
   align-items: center;
 }
 nav ul li:hover {
-  background: #222236;
+  background: #1e1e2b;
+}
+footer .footer-section {
+  display: flex;
+  flex: 1;
+  margin: 0 auto;
+  max-width: 1000px;
+  border-radius: 25px 25px 0 0;
+  border-top: 10px solid #13131f;
+  background: #62172b;
+}
+footer .footer-section .footer-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 5%;
+  width: 200px;
+}
+footer .footer-section .footer-box h4 {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 90px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+footer .footer-section .footer-box p {
+  color: white;
+  text-decoration: none;
+  line-height: 30px;
 }
 header {
   display: flex;
   max-width: 1000px;
+  border-radius: 25px 25px 0 0;
+  border-top: 10px solid #bb1333;
   height: 430px;
   margin: 0 auto;
   background: #62172b;
@@ -226,18 +264,19 @@ header .ctar a .button {
   height: 70px;
   padding: 20px;
   background: #bb1333;
+  border-radius: 10px;
 }
 header .ctar a .button:hover {
   background: #9e162f;
 }
 .about {
   max-width: 1000px;
-  height: 500px;
   margin: 0 auto;
 }
 .about .container {
   display: flex;
   justify-content: space-between;
+  background: #f0f4f7;
   padding: 40px;
 }
 .about .container .about-text {
@@ -256,11 +295,15 @@ header .ctar a .button:hover {
   width: 300px;
 }
 .feature-section {
-  background: #62172b;
+  background: #13131f;
 }
 .feature-section .features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1000px;
   margin: 0 auto;
+  background: #62172b;
 }
 .feature-section .features .feature-title {
   display: flex;
@@ -268,37 +311,116 @@ header .ctar a .button:hover {
   align-items: center;
   height: 200px;
 }
-.feature-section .features .feature-title p {
+.feature-section .features .feature-title h3 {
   font-size: 5rem;
   color: #fff;
   font-weight: 100;
   text-transform: uppercase;
 }
-.feature-section .features .container {
+.feature-section .features .feature-container {
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
-  justify-content: space-between;
-  height: 600px;
-  padding: 10px;
+  padding: 0 5% 20%;
+  justify-content: space-around;
 }
-.feature-section .features .container .box {
+.feature-section .features .feature-container .box {
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  padding: 10px;
   margin: 20px;
-  margin-bottom: 50px;
   width: 250px;
-  height: 200px;
+  height: 250px;
   background: #dfdfdf;
 }
-.feature-section .features .container .box:hover {
+.feature-section .features .feature-container .box:hover {
   background: #13131f;
   color: white;
   transition: 0.4s ease-in-out;
-  width: 250px;
-  height: 200px;
   background-image: url('../img/shield.png');
-  background-size: contain;
+  background-size: cover;
+}
+.contact-section {
+  background: #f0f4f7;
+  padding: 5%;
+}
+.contact-section .contact {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2%;
+}
+.contact-section .contact .contact-right {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+.contact-section .contact .contact-right form {
+  width: 80%;
+}
+.contact-section .contact .contact-right form label {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 25px;
+}
+.contact-section .contact .contact-right form #fname {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c5c3cf;
+  margin-top: 9px;
+  margin-bottom: 16px;
+  color: #000;
+}
+.contact-section .contact .contact-right form #lname {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c5c3cf;
+  margin-top: 9px;
+  margin-bottom: 16px;
+  color: #000;
+}
+.contact-section .contact .contact-right form #message {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c5c3cf;
+  margin-top: 9px;
+  margin-bottom: 16px;
+  color: #000;
+  height: 200px;
+}
+.contact-section .contact .contact-right form input[type="submit"] {
+  width: 150px;
+  padding: 10px;
+  background: #13131f;
+  text-transform: uppercase;
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-section .contact .contact-right form input[type="submit"]:hover {
+  background: #bb1333;
+}
+.contact-section .contact .contact-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 5%;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-section .contact .contact-left .contact-text {
+  font-size: 5rem;
+  color: #000;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.contact-section .contact .contact-left p {
+  font-size: 1.85rem;
+  font-weight: 100;
+  color: #000;
+  margin-bottom: 50px;
 }
