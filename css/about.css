@@ -1,0 +1,287 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.nav-section {
+  border-top: 10px solid #bb1333;
+  background: #13131f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  z-index: -1;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 170px;
+  border-top: 10px solid #bb1333;
+  background: #13131f;
+  padding: 20px;
+}
+nav .logo {
+  max-width: 220px;
+}
+nav .logo img {
+  max-width: 220px;
+}
+nav ul {
+  display: flex;
+}
+nav ul a {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+nav ul li {
+  display: flex;
+  height: 160px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li:hover {
+  background: #222236;
+}
+.container,
+.container2 {
+  display: flex;
+  padding: 0;
+  font-family: 'Noto Serif', serif;
+  width: 75vw;
+  position: relative;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.container .card,
+.container2 .card {
+  position: relative;
+}
+.container .card:hover,
+.container2 .card:hover {
+  transform: translateY(0);
+}
+.container .card .face,
+.container2 .card .face {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.container .card .face .face1,
+.container2 .card .face .face1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  transform: translateY(100px);
+}
+.container .card .face .face1 .content,
+.container2 .card .face .face1 .content {
+  opacity: 0.2;
+  transition: 0.5s;
+}
+.container .card .face .face1 .content:hover,
+.container2 .card .face .face1 .content:hover {
+  opacity: 1;
+}
+.container .card .face .face1 .content img,
+.container2 .card .face .face1 .content img {
+  width: 100%;
+}
+.face2 {
+  position: relative;
+  background: #171717;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px #ff8243;
+  z-index: -1;
+  transform: translateY(-150px);
+}
+.face2:hover {
+  transform: translateY(0);
+}
+.face2 .content {
+  margin: 0;
+  padding: 0;
+}
+.face2 .content h3 {
+  font-family: 'Noto Serif', serif;
+  color: #6e7dab;
+  text-align: center;
+  margin-top: 10%;
+}
+.face2 .content p {
+  font-family: 'PT Sans Narrow', sans-serif;
+  padding: 0;
+  color: #13131f;
+  margin: 3%;
+  text-align: center;
+}
+.face2 .content a {
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin-left: 40%;
+  display: inline-block;
+  text-decoration: underline overline #91A390;
+  font-weight: 900px;
+  color: #6e7dab;
+  padding: 5px;
+  background: #13131f;
+}
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    margin-left: 2%;
+  }
+  .container2 {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -150%;
+    margin-right: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    margin-left: 20%;
+  }
+  .container2 {
+    margin-top: 1%;
+    margin-right: 20%;
+  }
+}
