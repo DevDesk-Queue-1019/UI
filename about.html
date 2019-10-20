@@ -1,86 +1,144 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Lambda School - Web Dev Queue</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lambda School - Web Dev Queue</title>
+  <script src="https://kit.fontawesome.com/703be0d147.js"></script>
+  <meta name="description" content="">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet/less" type="text/css" href="less/bodya.less" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
 </head>
 <body>
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-  <div class="nav-section"></div> <!-- THIS DIV SPANS THE FULL WIDTH OF THE SCREEN BEHIND THE NAV AND HEADER WITH A Z-INDEX OF 1 TO PUT IT BEHIND THEM-->
+  <header id="home">
   <nav>
     <div class="logo">
       <img src="img/devdesk-logo.png" alt="Lamba School Logo"> 
     </div> 
-    <ul>
-      <a href="#home"><li>home</li></a>
-      <a href="#home"><li>about</li></a>
-      <a href="#home"><li>features</li></a>
-      <a href="#home"><li>contact</li></a>
-    </ul>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#team">Team Members</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>            
-  <header>
-    <div class="ctal">
-      <img src="img/shield.png" alt="">
-    </div>
-    <div class="ctar">
-      <p class="devdesk">dev desk</p>
-      <p class ="queue">queue</p>
-      <a href="#app"><span class="button">Get Started</span></a>
-    </div>
   </header>
-  <section class="about">
+  <section id="team">
     <div class="container">
-      <div class="about-text">
+			<div class="card">
+				<div class="face face1">
+					<div class="content">
+						<img src="img/Jacob_Angulo.jpg"/>
+					</div>
+				</div>
+    <div class="face face2">
+      <div class="content">
+        <a href="https://github.com/jacobAngulo">GitHub</a>
         <p>
-          Dev Desk Queue is a fully featured ticket queue system for Lambda School students that allows helpers to handle help inquiries with the students.
+          Project Lead Developer<br />
+          "Success consists of going from failure to failure
+          without loss of enthushiasm" --Sir Winston
+          Churchill--
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-        </p>                    
-      </div>
-      <div class="about-img">
-        <img src="img/place_holder.png" alt="place holder">
-      </div>                    
-    </div>
-  </section>
-
-  <div class="feature-section">
-  <section class="features">
-    <div class="feature-title">
-        <p>features</p>
-    </div>
-    <div class="container">
-      <div class="box">
-          <p>help desk</p>
-      </div>
-      <div class="box">
-          <p>tickets</p>
-      </div>
-      <div class="box">
-          <p>backlog</p>
-      </div>
-      <div class="box">
-          <p>faq</p>
-      </div>
-      <div class="box">
-          <p>user manual</p>
-      </div>
-      <div class="box">
-          <p>helpers</p>
+        <h3>Jacob Angulo</h3>
       </div>
     </div>
-  </section>
   </div>
-  <script src="" async defer></script>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <img src="img/Toosdai_Otte.jpg"/>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <a href="https://github.com/ToosdaiOtte?tab=repositories">GitHub</a>
+        <p>
+          Web React II Developer<br />
+          I was born on a rainy night in Texas. My family moved to Louisiana when I was an infant. Living in a small town, there's not much to peek your interest, so, I stayed on the computer all day. Then, an 'Introduction to Web Design' course was offered during high school, once I started, I was hooked. Now, I study Full-Stack Web Development with Lambda.
+        </p>
+        <h3>Toosdai Otte</h3>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <img src="img/#"/>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <a href="https://github.com/rthom2178">GitHub</a>
+        <p>
+          Web React II Developer<br />
+          "I take pride in being able to do as many things as
+          possible. I feel multi-tasking makes me valuable on
+          any team."
+        </p>
+        <h3>Robert Thompson</h3>
+      </div>
+    </div>
+  </div>
+</div>
+		<div class="container2">
+			<div class="card">
+				<div class="face face1">
+					<div class="content">
+						<img src="img/Daniel_Cruz.jpg" />
+					</div>
+				</div>
+				<div class="face face2">
+					<div class="content">
+						<a href="https://github.com/danielcruz1">GitHub</a>
+						<p>
+							Web React I Developer<br />
+							I am a part-time student at Lambda School's Full Stack Web Development course looking for new opportunities."
+						</p>
+						<h3>Daniel Cruz</h3>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="face face1">
+					<div class="content">
+						<img src="img/Mike_Lovelace.jpg" />
+					</div>
+				</div>
+				<div class="face face2">
+					<div class="content">
+						<a href="https://github.com/mtlovelace">GitHub</a>
+						<p>
+							Web UI Developer<br />
+							I am a part-time student at Lambda School. I am looking to improve my skills in programming.
+						</p>
+						<h3>Mike Lovelace</h3>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="face face1">
+					<div class="content">
+						<img src="img/Catherine_Kim.jpg" />
+					</div>
+				</div>
+				<div class="face face2">
+					<div class="content">
+						<a href="https://github.com/Catherinesjkim">GitHub</a>
+						<p>
+							Web UI Developer<br />
+							Customer Success Developer at an AI SaaS/SEM startup in Silicon Valley, CA. Love learning to code and automating workflow for IP professionals so that they can concentrate on what really matters!
+						</p>
+						<h3>Catherine Kim</h3>
+					</div>
+				</div>
+			</div>
+    </div>
+  </section>
+  <footer>
+    Copyrigth APP NAME
+  </footer>
 </body>
 </html>
