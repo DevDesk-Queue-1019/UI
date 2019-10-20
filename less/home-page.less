@@ -178,6 +178,10 @@ header { // MAIN HEADER
                         .form-elements;
                     }
 
+                    #subject {
+                        .form-elements;
+                    }
+
                     #message {
                         .form-elements;
                         height: 200px;
@@ -205,14 +209,16 @@ header { // MAIN HEADER
                 display: flex;
                 flex-direction: column;
                 width: 50%;
-                padding: 5%;
-                justify-content: space-around;
-                align-items: center;
+                padding: 2%;
+                justify-content: flex-start;
+                align-items: flex-start;
+                border-right: 1px solid @section-bg;
 
                     .contact-text { 
                         font-size: 5rem;
                         color: #000;
                         font-weight: 100;
+                        margin-bottom: 10%;
                         text-transform: uppercase;
                     }
 
@@ -220,7 +226,7 @@ header { // MAIN HEADER
                         font-size: 1.85rem;
                         font-weight: 100;
                         color: #000;
-                        margin-bottom: 50px;
+                        //margin-bottom: 50px;
                     }
             }
     } 
