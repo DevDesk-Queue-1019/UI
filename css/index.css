@@ -139,7 +139,7 @@ table {
 }
 body {
   background: #f0f4f7;
-  font-family: 'Helvetica Neue';
+  font-family: 'Montserrat';
   letter-spacing: 1px;
 }
 a {
@@ -193,6 +193,7 @@ nav ul li:hover {
 }
 footer {
   background: #13131f;
+  box-shadow: inset 0px 250px 0px -48px #f0f4f7;
 }
 footer .footer-section {
   display: flex;
@@ -276,11 +277,11 @@ header .ctar {
 header .ctar .devdesk {
   font-size: 4rem;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
   color: white;
 }
 header .ctar .queue {
-  font-size: 6.7rem;
+  font-size: 6rem;
   text-transform: uppercase;
   font-weight: 100;
   color: white;
