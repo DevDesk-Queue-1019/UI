@@ -149,7 +149,7 @@ table {
   margin-left: 50%;
 }
 #home nav a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
 }
 #home nav a:hover {
@@ -178,7 +178,7 @@ body .container,
 body .container2 {
   display: flex;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   width: 75vw;
   position: relative;
   justify-content: space-evenly;
@@ -241,7 +241,7 @@ body .face2 .content {
   padding: 0;
 }
 body .face2 .content h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
   text-align: center;
   margin-top: 10%;
