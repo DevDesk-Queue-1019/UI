@@ -1,15 +1,16 @@
 header { // MAIN HEADER
     display: flex;
     max-width: 1000px;
-    border-radius: 25px 25px 0 0;
-    border-top: 10px solid @button-bg;
+    border-radius: 50px 50px 0 0;
+    border-top: 5px solid #521324;
     height: 430px;
     margin: 0 auto;
     background: @section-bg;
+    //box-shadow: inset 0px 170px 191px -48px rgba(0,0,0,0.36);
 
         .ctal { // LEFT SIDE OF HEADER SECTION WITH SHIELD
             display: flex;
-            width: 50%;
+            width: 40%;
             justify-content: center;
             align-items: center;
         }
@@ -17,7 +18,7 @@ header { // MAIN HEADER
         .ctar { // RIGHT SIDE OF HEADER SECTION WITH DEVDESK QUEUE AND BUTTON
             display: flex;
             flex-direction: column;
-            width: 50%;
+            width: 60%;
             justify-content: center;
             align-items: center;
 
@@ -60,19 +61,22 @@ header { // MAIN HEADER
 
 
 .about { // ABOUT SMALL SECTION
-    max-width: 1000px;
-    margin: 0 auto;
+        box-shadow: inset 0px 70px 61px -48px rgba(0,0,0,0.36);
 
     .container {
         display: flex;
         justify-content: space-between;
-        background: @main-bg;
+        max-width: 1000px;
+        margin: 0 auto;
+        //background: @main-bg;
         padding: 40px;
 
             .about-text {
             font-size: 1.5rem;
             font-weight: 200;
-            width: 48%;
+            width: 60%;
+            border-right: 1px solid #cdd6df;
+            padding-right: 10%;
 
             p {
                 margin-bottom: 20px;
@@ -80,7 +84,7 @@ header { // MAIN HEADER
         }
 
         .about-img {
-            width: 48%;
+            width: 40%;
             text-align: right;
 
             img {
@@ -100,6 +104,7 @@ header { // MAIN HEADER
         max-width: 1000px;
         margin: 0 auto;
         background: @section-bg;
+        //box-shadow: inset 0px 40px 51px -30px rgba(0,0,0,0.76);
 
         .feature-title {
             display: flex;
@@ -133,11 +138,11 @@ header { // MAIN HEADER
                 background: #dfdfdf;
 
                 &:hover {
-                    background: @header-bg;
+                    //background: @header-bg;
                     color: white;
                     transition: .4s ease-in-out;
-                    background-image: url('../img/shield.png');
-                    background-size: cover;
+                    //background-image: url('../img/shield.png');
+                    //background-size: cover;
                 }
             }
         }
@@ -147,6 +152,7 @@ header { // MAIN HEADER
 .contact-section { // CONTACT SECTION
     background: @main-bg;
     padding: 5%;
+    box-shadow: inset 0px 100px 100px -60px rgba(0,0,0,0.25);
 
     .contact {
         display: flex;
@@ -212,7 +218,8 @@ header { // MAIN HEADER
                 padding: 2%;
                 justify-content: flex-start;
                 align-items: flex-start;
-                border-right: 1px solid @section-bg;
+                border-right: 1px solid #cdd6df;
+                //background: #e4e9ee;
 
                     .contact-text { 
                         font-size: 5rem;

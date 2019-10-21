@@ -191,13 +191,15 @@ nav ul li {
 nav ul li:hover {
   background: #1e1e2b;
 }
+footer {
+  background: #13131f;
+}
 footer .footer-section {
   display: flex;
   flex: 1;
   margin: 0 auto;
   max-width: 1000px;
-  border-radius: 25px 25px 0 0;
-  border-top: 10px solid #13131f;
+  border-radius: 50px 50px 0 0;
   background: #62172b;
 }
 footer .footer-section .footer-box {
@@ -207,14 +209,44 @@ footer .footer-section .footer-box {
   padding: 5%;
   width: 200px;
 }
+footer .footer-section .footer-box:nth-of-type(1) {
+  border-radius: 50px 0 0;
+  background: #521324;
+}
+footer .footer-section .footer-box .footer-links img {
+  max-width: 40%;
+  padding: 2%;
+}
+footer .footer-section .footer-box #list-signup {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c5c3cf;
+  margin-top: 9px;
+  margin-bottom: 16px;
+  color: #000;
+}
+footer .footer-section .footer-box #list-submit {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c5c3cf;
+  margin-top: 9px;
+  margin-bottom: 16px;
+  color: #000;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+footer .footer-section .footer-box #list-submit:hover {
+  background: #bb1333;
+}
 footer .footer-section .footer-box h4 {
   color: white;
   font-size: 1.5rem;
-  line-height: 90px;
   text-transform: uppercase;
   font-weight: 300;
+  margin-bottom: 20px;
 }
-footer .footer-section .footer-box p {
+footer .footer-section .footer-box a {
   color: white;
   text-decoration: none;
   line-height: 30px;
@@ -222,22 +254,22 @@ footer .footer-section .footer-box p {
 header {
   display: flex;
   max-width: 1000px;
-  border-radius: 25px 25px 0 0;
-  border-top: 10px solid #bb1333;
+  border-radius: 50px 50px 0 0;
+  border-top: 5px solid #521324;
   height: 430px;
   margin: 0 auto;
   background: #62172b;
 }
 header .ctal {
   display: flex;
-  width: 50%;
+  width: 40%;
   justify-content: center;
   align-items: center;
 }
 header .ctar {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   justify-content: center;
   align-items: center;
 }
@@ -271,25 +303,27 @@ header .ctar a .button:hover {
   background: #9e162f;
 }
 .about {
-  max-width: 1000px;
-  margin: 0 auto;
+  box-shadow: inset 0px 70px 61px -48px rgba(0, 0, 0, 0.36);
 }
 .about .container {
   display: flex;
   justify-content: space-between;
-  background: #f0f4f7;
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 40px;
 }
 .about .container .about-text {
   font-size: 1.5rem;
   font-weight: 200;
-  width: 48%;
+  width: 60%;
+  border-right: 1px solid #cdd6df;
+  padding-right: 10%;
 }
 .about .container .about-text p {
   margin-bottom: 20px;
 }
 .about .container .about-img {
-  width: 48%;
+  width: 40%;
   text-align: right;
 }
 .about .container .about-img img {
@@ -336,15 +370,13 @@ header .ctar a .button:hover {
   background: #dfdfdf;
 }
 .feature-section .features .feature-container .box:hover {
-  background: #13131f;
   color: white;
   transition: 0.4s ease-in-out;
-  background-image: url('../img/shield.png');
-  background-size: cover;
 }
 .contact-section {
   background: #f0f4f7;
   padding: 5%;
+  box-shadow: inset 0px 100px 100px -60px rgba(0, 0, 0, 0.25);
 }
 .contact-section .contact {
   display: flex;
@@ -420,7 +452,7 @@ header .ctar a .button:hover {
   padding: 2%;
   justify-content: flex-start;
   align-items: flex-start;
-  border-right: 1px solid #62172b;
+  border-right: 1px solid #cdd6df;
 }
 .contact-section .contact .contact-left .contact-text {
   font-size: 5rem;

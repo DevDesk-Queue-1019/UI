@@ -1,11 +1,11 @@
 footer {
+    background: @header-bg;
     .footer-section {
         display: flex;
         flex: 1;
         margin: 0 auto;
         max-width: 1000px;
-        border-radius: 25px 25px 0 0;
-        border-top: 10px solid @header-bg;
+        border-radius: 50px 50px 0 0;
         background: @section-bg;
 
         .footer-box {
@@ -15,15 +15,42 @@ footer {
             padding: 5%;
             width: 200px;
 
+            &:nth-of-type(1) {
+                border-radius: 50px 0 0;
+                background: #521324;
+            }
+
+            .footer-links {
+                
+                img {
+                    max-width: 40%;
+                    padding: 2%;
+                }
+            }
+
+            #list-signup {
+                .form-elements;
+            }
+
+            #list-submit {
+                .form-elements;
+                border: 0px;
+                cursor: pointer;
+                border-radius: 5px;
+                &:hover {
+                    background: @button-bg;
+                }
+            }
+
             h4 {
                 color:white;
                 font-size: 1.5rem;
-                line-height: 90px;
                 text-transform: uppercase;
                 font-weight: 300;
+                margin-bottom: 20px;
             }
 
-            p{
+            a{
                 color: white;
                 text-decoration: none;
                 line-height: 30px;
