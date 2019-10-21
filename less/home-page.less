@@ -1,6 +1,8 @@
 header { // MAIN HEADER
     display: flex;
     max-width: 1000px;
+    border-radius: 25px 25px 0 0;
+    border-top: 10px solid @button-bg;
     height: 430px;
     margin: 0 auto;
     background: @section-bg;
@@ -44,6 +46,7 @@ header { // MAIN HEADER
                             height: 70px;
                             padding: 20px;
                             background: @button-bg;
+                            border-radius: 10px;
 
                                 &:hover {
                                     background: #9e162f;
@@ -58,12 +61,12 @@ header { // MAIN HEADER
 
 .about { // ABOUT SMALL SECTION
     max-width: 1000px;
-    height: 500px;
     margin: 0 auto;
 
     .container {
         display: flex;
         justify-content: space-between;
+        background: @main-bg;
         padding: 40px;
 
             .about-text {
@@ -87,14 +90,16 @@ header { // MAIN HEADER
     }
 } //END ABOUT
 
-// FEATURES
-
-.feature-section {
-    background: @section-bg;
+.feature-section { // FEATURES
+    background: @header-bg;
 
     .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         max-width: 1000px;
         margin: 0 auto;
+        background: @section-bg;
 
         .feature-title {
             display: flex;
@@ -102,7 +107,7 @@ header { // MAIN HEADER
             align-items: center;
             height: 200px;
 
-            p {
+            h3 {
                 font-size: 5rem;
                 color: #fff;
                 font-weight: 100;
@@ -110,35 +115,119 @@ header { // MAIN HEADER
             }
         }
 
-        .container {
+        .feature-container {
             display: flex;
+            flex: 1;
             flex-wrap: wrap;
-            justify-content: space-between;
-            height: 600px;
-            padding: 10px;
+            padding: 0 5% 20%;
+            justify-content: space-around;
 
             .box {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-transform: uppercase;
-                padding: 10px;
                 margin: 20px;
-                margin-bottom: 50px;
                 width: 250px;
-                height: 200px;
+                height: 250px;
                 background: #dfdfdf;
 
                 &:hover {
                     background: @header-bg;
                     color: white;
                     transition: .4s ease-in-out;
-                    width: 250px;
-                    height: 200px;
                     background-image: url('../img/shield.png');
-                    background-size: contain;
+                    background-size: cover;
                 }
             }
         }
     }
-}
+} // FEATURES END
+
+.contact-section { // CONTACT SECTION
+    background: @main-bg;
+    padding: 5%;
+
+    .contact {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2%;
+
+            .contact-right { 
+                display: flex;
+                width: 50%;
+                justify-content: center;
+                align-items: center;
+                padding: 2%;
+
+                form {
+                    width: 80%;
+
+                    label {
+                        font-size: 1.3rem;
+                        font-weight: 300;
+                        line-height: 25px;
+                    }
+
+                    #fname {
+                        .form-elements;
+                    }
+
+                    #lname {
+                        .form-elements;
+                    }
+
+                    #subject {
+                        .form-elements;
+                    }
+
+                    #message {
+                        .form-elements;
+                        height: 200px;
+                    }
+
+                    input[type="submit"] {
+                        width: 150px;
+                        padding: 10px;
+                        background: @header-bg;
+                        text-transform: uppercase;
+                        border: 0px;
+                        color: white;
+                        border-radius: 5px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background: @button-bg;
+                        }
+                    }
+                      
+                }
+            }
+
+            .contact-left { 
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                padding: 2%;
+                justify-content: flex-start;
+                align-items: flex-start;
+                border-right: 1px solid @section-bg;
+
+                    .contact-text { 
+                        font-size: 5rem;
+                        color: #000;
+                        font-weight: 100;
+                        margin-bottom: 10%;
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        font-size: 1.85rem;
+                        font-weight: 100;
+                        color: #000;
+                        //margin-bottom: 50px;
+                    }
+            }
+    } 
+}// CONTACT END
