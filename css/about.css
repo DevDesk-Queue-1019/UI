@@ -149,11 +149,26 @@ table {
   margin-left: 50%;
 }
 #home nav a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
 }
 #home nav a:hover {
   color: #bb1333;
+}
+@media (max-width: 800px) {
+  #home nav {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+@media (max-width: 500px) {
+  #home nav {
+    width: 100%;
+    margin-left: 0%;
+  }
+  #home nav a {
+    font-size: 9px;
+  }
 }
 body {
   width: 75%;
@@ -163,7 +178,7 @@ body .container,
 body .container2 {
   display: flex;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   width: 75vw;
   position: relative;
   justify-content: space-evenly;
@@ -226,7 +241,7 @@ body .face2 .content {
   padding: 0;
 }
 body .face2 .content h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
   text-align: center;
   margin-top: 10%;
@@ -251,19 +266,20 @@ body .face2 .content a {
 @media (max-width: 800px) {
   .container {
     flex-direction: column;
+    align-items: center;
     margin-left: 2%;
   }
   .container2 {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    margin-top: -150%;
+    align-items: center;
+    margin-top: 2%;
     margin-right: 1%;
   }
 }
 @media (max-width: 500px) {
   .container {
-    margin-left: 20%;
+    margin-left: 1%;
   }
   .container2 {
     display: flex;
