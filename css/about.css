@@ -149,7 +149,7 @@ table {
   margin-left: 50%;
 }
 #home nav a {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
 }
 #home nav a:hover {
@@ -163,7 +163,7 @@ body .container,
 body .container2 {
   display: flex;
   padding: 0;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Montserrat', sans-serif;
   width: 75vw;
   position: relative;
   justify-content: space-evenly;
@@ -226,20 +226,20 @@ body .face2 .content {
   padding: 0;
 }
 body .face2 .content h3 {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   text-align: center;
   margin-top: 10%;
 }
 body .face2 .content p {
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 0;
   color: white;
   margin: 3%;
   text-align: center;
 }
 body .face2 .content a {
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-left: 40%;
   display: inline-block;
   text-decoration: underline overline white;
