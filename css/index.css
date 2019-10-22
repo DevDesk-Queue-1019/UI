@@ -145,26 +145,27 @@ body {
 a {
   text-decoration: none;
 }
-.nav-section {
-  border-top: 10px solid #bb1333;
-  background: #13131f;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 600px;
-  z-index: -1;
-}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  max-width: 1000px;
-  height: 170px;
+  padding: 0 22%;
   border-top: 10px solid #bb1333;
   background: #13131f;
-  padding: 20px;
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+  }
 }
 nav .logo {
   max-width: 220px;
@@ -172,8 +173,19 @@ nav .logo {
 nav .logo img {
   max-width: 220px;
 }
+@media (max-width: 600px) {
+  nav .logo img {
+    max-width: 175px;
+  }
+}
+@media (max-width: 800px) {
+  nav .logo img {
+    max-width: 175px;
+  }
+}
 nav ul {
   display: flex;
+  margin-right: 20px;
 }
 nav ul a {
   text-transform: uppercase;
@@ -184,9 +196,21 @@ nav ul a {
 nav ul li {
   display: flex;
   height: 160px;
-  width: 100px;
+  width: 90px;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 600px) {
+  nav ul li {
+    height: 50px;
+    width: 100px;
+  }
+}
+@media (max-width: 800px) {
+  nav ul li {
+    height: 50px;
+    width: 100px;
+  }
 }
 nav ul li:hover {
   background: #1e1e2b;
@@ -203,6 +227,11 @@ footer .footer-section {
   border-radius: 50px 50px 0 0;
   background: #62172b;
 }
+@media (max-width: 600px) {
+  footer .footer-section {
+    border-radius: 0px;
+  }
+}
 footer .footer-section .footer-box {
   display: flex;
   flex-direction: column;
@@ -213,6 +242,11 @@ footer .footer-section .footer-box {
 footer .footer-section .footer-box:nth-of-type(1) {
   border-radius: 50px 0 0;
   background: #521324;
+}
+@media (max-width: 600px) {
+  footer .footer-section .footer-box:nth-of-type(1) {
+    border-radius: 0px;
+  }
 }
 footer .footer-section .footer-box .footer-links img {
   max-width: 40%;
@@ -247,6 +281,11 @@ footer .footer-section .footer-box h4 {
   font-weight: 300;
   margin-bottom: 20px;
 }
+@media (max-width: 600px) {
+  footer .footer-section .footer-box h4 {
+    font-size: 1rem;
+  }
+}
 footer .footer-section .footer-box a {
   color: white;
   text-decoration: none;
@@ -261,11 +300,27 @@ header {
   margin: 0 auto;
   background: #62172b;
 }
+@media (max-width: 600px) {
+  header {
+    height: 430px;
+    border-radius: 0px;
+  }
+}
 header .ctal {
   display: flex;
   width: 40%;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 600px) {
+  header .ctal {
+    width: 0px;
+  }
+}
+@media (max-width: 600px) {
+  header .ctal img {
+    display: none;
+  }
 }
 header .ctar {
   display: flex;
@@ -274,11 +329,21 @@ header .ctar {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 600px) {
+  header .ctar {
+    width: 100%;
+  }
+}
 header .ctar .devdesk {
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: 700;
   color: white;
+}
+@media (max-width: 600px) {
+  header .ctar .devdesk {
+    font-size: 4.6rem;
+  }
 }
 header .ctar .queue {
   font-size: 6rem;
@@ -286,6 +351,11 @@ header .ctar .queue {
   font-weight: 100;
   color: white;
   margin-bottom: 50px;
+}
+@media (max-width: 600px) {
+  header .ctar .queue {
+    font-size: 7rem;
+  }
 }
 header .ctar a {
   color: white;
@@ -300,6 +370,13 @@ header .ctar a .button {
   background: #bb1333;
   border-radius: 10px;
 }
+@media (max-width: 600px) {
+  header .ctar a .button {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+  }
+}
 header .ctar a .button:hover {
   background: #9e162f;
 }
@@ -313,12 +390,30 @@ header .ctar a .button:hover {
   margin: 0 auto;
   padding: 40px;
 }
+@media (max-width: 600px) {
+  .about .container {
+    flex-direction: column;
+  }
+}
 .about .container .about-text {
   font-size: 1.5rem;
   font-weight: 200;
   width: 60%;
   border-right: 1px solid #cdd6df;
   padding-right: 10%;
+}
+@media (max-width: 600px) {
+  .about .container .about-text {
+    width: 100%;
+    border-right: 0px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 800px) {
+  .about .container .about-text {
+    font-size: 1.3rem;
+    border-right: 0px;
+  }
 }
 .about .container .about-text p {
   margin-bottom: 20px;
@@ -327,8 +422,20 @@ header .ctar a .button:hover {
   width: 40%;
   text-align: right;
 }
+@media (max-width: 600px) {
+  .about .container .about-img {
+    width: 100%;
+    text-align: center;
+  }
+}
 .about .container .about-img img {
-  width: 300px;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .about .container .about-img img {
+    width: 400px;
+    padding: 50px 0 50px 0;
+  }
 }
 .feature-section {
   background: #13131f;
@@ -370,6 +477,18 @@ header .ctar a .button:hover {
   height: 250px;
   background: #dfdfdf;
 }
+@media (max-width: 800px) {
+  .feature-section .features .feature-container .box {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .feature-section .features .feature-container .box {
+    width: 400px;
+    height: 400px;
+  }
+}
 .feature-section .features .feature-container .box:hover {
   color: white;
   transition: 0.4s ease-in-out;
@@ -385,6 +504,11 @@ header .ctar a .button:hover {
   margin: 0 auto;
   padding: 2%;
 }
+@media (max-width: 600px) {
+  .contact-section .contact {
+    flex-direction: column;
+  }
+}
 .contact-section .contact .contact-right {
   display: flex;
   width: 50%;
@@ -392,8 +516,19 @@ header .ctar a .button:hover {
   align-items: center;
   padding: 2%;
 }
+@media (max-width: 600px) {
+  .contact-section .contact .contact-right {
+    width: 100%;
+  }
+}
 .contact-section .contact .contact-right form {
   width: 80%;
+}
+@media (max-width: 600px) {
+  .contact-section .contact .contact-right form {
+    margin: 50px 0 50px 0;
+    width: 100%;
+  }
 }
 .contact-section .contact .contact-right form label {
   font-size: 1.3rem;
@@ -455,6 +590,13 @@ header .ctar a .button:hover {
   align-items: flex-start;
   border-right: 1px solid #cdd6df;
 }
+@media (max-width: 600px) {
+  .contact-section .contact .contact-left {
+    width: 100%;
+    border-right: 0px;
+    align-items: center;
+  }
+}
 .contact-section .contact .contact-left .contact-text {
   font-size: 5rem;
   color: #000;
@@ -462,8 +604,23 @@ header .ctar a .button:hover {
   margin-bottom: 10%;
   text-transform: uppercase;
 }
+@media (max-width: 800px) {
+  .contact-section .contact .contact-left .contact-text {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 600px) {
+  .contact-section .contact .contact-left .contact-text {
+    margin-bottom: 20%;
+  }
+}
 .contact-section .contact .contact-left p {
-  font-size: 1.85rem;
+  font-size: 1.5rem;
   font-weight: 100;
   color: #000;
+}
+@media (max-width: 800px) {
+  .contact-section .contact .contact-left p {
+    font-size: 1.3rem;
+  }
 }

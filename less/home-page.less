@@ -6,13 +6,27 @@ header { // MAIN HEADER
     height: 430px;
     margin: 0 auto;
     background: @section-bg;
-    //box-shadow: inset 0px 170px 191px -48px rgba(0,0,0,0.36);
+
+    @media @mobile {
+        height: 430px;
+        border-radius: 0px;
+    }
 
         .ctal { // LEFT SIDE OF HEADER SECTION WITH SHIELD
             display: flex;
             width: 40%;
             justify-content: center;
             align-items: center;
+
+            @media @mobile {
+                width: 0px;
+            }
+            img {
+                
+                @media @mobile {
+                    display: none;
+                }
+            }
         }
 
         .ctar { // RIGHT SIDE OF HEADER SECTION WITH DEVDESK QUEUE AND BUTTON
@@ -22,11 +36,19 @@ header { // MAIN HEADER
             justify-content: center;
             align-items: center;
 
+            @media @mobile {
+                width: 100%;
+            }
+
                 .devdesk { // DEVDESK HEADER TEXT
                     font-size: 4rem;
                     text-transform: uppercase;
                     font-weight: 700;
                     color: white;
+
+                    @media @mobile {
+                        font-size: 4.6rem;
+                    }
                 }
 
                 .queue { // QUEUE HEADER TEXT
@@ -35,6 +57,10 @@ header { // MAIN HEADER
                     font-weight: 100;
                     color: white;
                     margin-bottom: 50px;
+
+                    @media @mobile {
+                        font-size: 7rem;
+                    }
                 }
                 a { // GET STARTED TEXT INSIDE BUTTON
                     color: white;
@@ -48,6 +74,12 @@ header { // MAIN HEADER
                             padding: 20px;
                             background: @button-bg;
                             border-radius: 10px;
+
+                            @media @mobile {
+                                width: 150px;
+                                height: 50px;
+                                border-radius: 5px;
+                            }
 
                                 &:hover {
                                     background: #9e162f;
@@ -68,8 +100,11 @@ header { // MAIN HEADER
         justify-content: space-between;
         max-width: 1000px;
         margin: 0 auto;
-        //background: @main-bg;
         padding: 40px;
+
+        @media @mobile {
+            flex-direction: column;
+        }
 
             .about-text {
             font-size: 1.5rem;
@@ -77,6 +112,17 @@ header { // MAIN HEADER
             width: 60%;
             border-right: 1px solid #cdd6df;
             padding-right: 10%;
+
+            @media @mobile {
+                width: 100%;
+                border-right: 0px;
+                padding-right: 0px;
+            }
+
+            @media @tablet {
+                font-size: 1.3rem;
+                border-right: 0px;
+            }
 
             p {
                 margin-bottom: 20px;
@@ -87,8 +133,18 @@ header { // MAIN HEADER
             width: 40%;
             text-align: right;
 
+            @media @mobile {
+                width: 100%;
+                text-align: center;
+            }
+
             img {
-            width: 300px;
+            width: 100%;
+
+            @media @mobile {
+                width: 400px;
+                padding: 50px 0 50px 0;
+            }
             }
         }
     }
@@ -137,6 +193,16 @@ header { // MAIN HEADER
                 height: 250px;
                 background: #dfdfdf;
 
+                @media @tablet {
+                    width: 300px;
+                    height: 300px;
+                }
+
+                @media @mobile {
+                    width: 400px;
+                    height: 400px;
+                }
+
                 &:hover {
                     //background: @header-bg;
                     color: white;
@@ -160,6 +226,10 @@ header { // MAIN HEADER
         margin: 0 auto;
         padding: 2%;
 
+        @media @mobile {
+            flex-direction: column;
+        }
+
             .contact-right { 
                 display: flex;
                 width: 50%;
@@ -167,8 +237,17 @@ header { // MAIN HEADER
                 align-items: center;
                 padding: 2%;
 
+                @media @mobile {
+                    width: 100%;
+                }
+
                 form {
                     width: 80%;
+
+                    @media @mobile {
+                        margin: 50px 0 50px 0;
+                        width: 100%;
+                    }
 
                     label {
                         font-size: 1.3rem;
@@ -219,7 +298,12 @@ header { // MAIN HEADER
                 justify-content: flex-start;
                 align-items: flex-start;
                 border-right: 1px solid #cdd6df;
-                //background: #e4e9ee;
+
+                @media @mobile {
+                    width: 100%;
+                    border-right: 0px;
+                    align-items: center;
+                }
 
                     .contact-text { 
                         font-size: 5rem;
@@ -227,13 +311,25 @@ header { // MAIN HEADER
                         font-weight: 100;
                         margin-bottom: 10%;
                         text-transform: uppercase;
+
+                        @media @tablet {
+                            font-size: 4rem;
+                        }
+
+                        @media @mobile {
+                            margin-bottom: 20%;
+                        }
                     }
 
                     p {
-                        font-size: 1.85rem;
+                        font-size: 1.5rem;
                         font-weight: 100;
                         color: #000;
-                        //margin-bottom: 50px;
+
+                        @media @tablet {
+                            font-size: 1.3rem;
+                        }
+                        
                     }
             }
     } 

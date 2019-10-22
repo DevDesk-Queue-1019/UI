@@ -10,6 +10,10 @@ footer {
         border-radius: 50px 50px 0 0;
         background: @section-bg;
 
+        @media @mobile {
+            border-radius: 0px;
+        }
+
         .footer-box {
             display: flex;
             flex-direction: column;
@@ -20,6 +24,10 @@ footer {
             &:nth-of-type(1) {
                 border-radius: 50px 0 0;
                 background: #521324;
+
+                @media @mobile {
+                    border-radius: 0px;
+                }
             }
 
             .footer-links {
@@ -50,6 +58,10 @@ footer {
                 text-transform: uppercase;
                 font-weight: 300;
                 margin-bottom: 20px;
+
+                @media @mobile {
+                    font-size: 1rem;
+                }
             }
 
             a{
