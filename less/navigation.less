@@ -1,3 +1,74 @@
+<<<<<<< HEAD
+    nav { // NAV BAR WITH SPACE BETWEEN TO ADD LOTS OF SPACE BETWEEN LOGO AND NAV LINKS
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 22%;
+        border-top: 10px solid @button-bg;
+        background: @header-bg;
+        //padding: 20px;
+
+        @media @mobile {
+            flex-direction: column;
+            height: 200px;
+            justify-content: center;
+        }
+
+        @media @tablet {
+            flex-direction: column;
+            height: 200px;
+            justify-content: center;
+        }
+            
+        .logo { // LOGO ON LEFT SIDE OF NAV BAR
+            max-width: 220px;
+                img {
+                    max-width: 220px;
+
+                    @media @mobile {
+                        max-width: 175px;
+                    }
+
+                    @media @tablet {
+                        max-width: 175px;
+                    }
+                }
+                
+        }
+
+            ul {
+                display: flex;
+                margin-right: 20px;
+
+                    a {
+                        text-transform: uppercase;
+                        color: white;
+                        font-weight: 300;
+                        font-size: .8em;
+                    }
+
+                        li { // LIST ITEMS WRAPPED IN <a> TAGS TO MAKE THEM CLICKABLE AS LINKS AS OPPOSED TO JUST THE TEXT-LINKS
+                            display: flex;
+                            height: 160px;
+                            //padding: 15px;
+                            width: 90px;
+                            justify-content: center;
+                            align-items: center;
+
+                            @media @mobile {
+                                height: 50px;
+                                width: 100px;
+                            }
+
+                            @media @tablet {
+                                height: 50px;
+                                width: 100px;
+                            }
+
+                            &:hover {
+                                background: @nav-hover;
+                            }
+=======
 #home{
 	display: flex;
 	border-top: 10px solid @button-bg;
@@ -33,6 +104,7 @@
 	#home nav{
 		width: 100%;
 		margin-left: 0%;
+>>>>>>> 67a8b32c8c63efdb738ea173279e70dd16ee563f
 
 		a{
 			font-size: 9px;

@@ -6,37 +6,31 @@
 <html class="no-js">
   <!--<![endif]-->
 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Lambda School - Web Dev Queue</title>
-    <script src="https://kit.fontawesome.com/703be0d147.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet/less" type="text/css" href="less/index.less" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
-  </head>
-  <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lambda School - Web Dev Queue</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <div class="nav-section"></div>
-    <!-- THIS DIV SPANS THE FULL WIDTH OF THE SCREEN BEHIND THE NAV AND HEADER WITH A Z-INDEX OF 1 TO PUT IT BEHIND THEM-->
-    <section id="home">
-      <div class="logo">
-        <img src="img/devdesk-logo.png" alt="Lamba School Logo" />
-      </div>
-      <nav>
-        <a href="#home">home</a>
-        <a href="about.html">about</a>
-        <a href="#features">features</a>
-        <a href="#contact">contact</a>
-      </nav>
-    </section>
+            <nav>
+                <div class="logo">
+                   <img src="img/devdesk-logo.png" alt="Lamba School Logo"> 
+                </div> 
+                <ul>
+                    <a href="#home"><li>home</li></a>
+                    <a href="#home"><li>about</li></a>
+                    <a href="#home"><li>features</li></a>
+                    <a href="#home"><li>contact</li></a>
+                </ul>
+            </nav>            
 
     <header>
       <div class="ctal">
@@ -69,42 +63,136 @@
           <img src="img/place_holder.png" alt="place holder" />
         </div>
       </div>
-    </section>
-
-    <div class="feature-section">
-      <section class="features">
-        <div class="feature-title">
-          <p>features</p>
-        </div>
-
-        <div class="container">
-          <div class="box">
-            <p>help desk</p>
-          </div>
-
-          <div class="box">
-            <p>tickets</p>
-          </div>
-
-          <div class="box">
-            <p>backlog</p>
-          </div>
-
-          <div class="box">
-            <p>faq</p>
-          </div>
-
-          <div class="box">
-            <p>user manual</p>
-          </div>
-
-          <div class="box">
-            <p>helpers</p>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <script src="" async defer></script>
-  </body>
-</html>
+    </section>                 
+                    </div>
+                    <div class="feature-section">
+                        <section class="features">
+            
+                            <div class="feature-title">
+                                <h3>features</h3>
+                            </div>
+            
+                            <div class="feature-container">
+            
+                                <div class="box">
+                                    <p>help desk</p>
+                                </div>
+                                
+                                <div class="box">
+                                    <p>tickets</p>
+                                </div>
+            
+                                <div class="box">
+                                    <p>backlog</p>
+                                </div>
+            
+                                <div class="box">
+                                    <p>faq</p>
+                                </div>
+            
+                                <div class="box">
+                                    <p>user manual</p>
+                                </div>
+            
+                                <div class="box">
+                                    <p>helpers</p>
+                                </div>
+            
+                            </div>
+                            
+                        </section>
+                        </div>
+            
+                        <div class="contact-section">
+                            <section class ="contact">
+                                <div class="contact-left">
+                                    <h2 class="contact-text">contact</h2>
+                                    <p>Got a question? We'd love to hear from you and we will respond as soon as possible. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="contact-right">
+                                        <form action="#">
+            
+                                            <label for="fname">First Name</label>
+                                            <input
+                                              type="text"
+                                              id="fname"
+                                              name="firstname"
+                                              placeholder="First name..."/>
+                                  
+                                            <label for="lname">Last Name</label>
+                                            <input
+                                              type="text"
+                                              id="lname"
+                                              name="lastname"
+                                              placeholder="Last name..."/>
+            
+                                              <label for="subject">Subject</label>
+                                              <input
+                                                type="text"
+                                                id="subject"
+                                                name="subject"
+                                                placeholder="Subject here..."/>
+                                  
+                                            <label for="subject">Message</label>
+                                            <textarea
+                                              id="message"
+                                              name="message"
+                                              placeholder="Write something..."> 
+                                            </textarea>
+                                  
+                                            <input type="submit" value="Submit" />
+                                          </form>
+                                </div>
+                            </section>
+                        </div>
+            
+                            <footer>
+                                <div class="footer-section">
+                                    <div class="footer-box">
+                                        <h4>company</h4>
+            
+                                        <ul>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Mentor Program</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="footer-box">
+                                        <h4>follow us</h4>
+                                            <div class="footer-links">
+                                                <a href="#"><img src="img/twitter.png" alt="follow us on twitter"></a>
+                                                <a href="#"><img src="img/facebook.png" alt="follow us on facebook"></a>
+                                                <a href="#"><img src="img/instagram.png" alt="follow us on instagram"></a>
+                                                <a href="#"><img src="img/github.png" alt="github"></a>
+                                            </div>
+                                    </div>
+            
+                                    <div class="footer-box">
+                                            <h4>join our mailing list</h4>
+                                            <div class="footer-links">
+                                                    <form action="#">
+            
+                                                            <label for="list-signup"></label>
+                                                            <input
+                                                              type="text"
+                                                              id="list-signup"
+                                                              name="email-list"
+                                                              placeholder="Enter your email..."/>
+                                                              <br>
+                                                            <input id="list-submit" type="submit" value="Signup" />
+                                                          </form>
+                                            </div>
+                                    </div>                        
+                                </div>
+            
+                            </footer>
+            
+                    
+                    <script src="" async defer></script>
+                </body>
+            </html>
