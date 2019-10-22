@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     nav { // NAV BAR WITH SPACE BETWEEN TO ADD LOTS OF SPACE BETWEEN LOGO AND NAV LINKS
         display: flex;
         justify-content: space-between;
@@ -67,7 +68,46 @@
                             &:hover {
                                 background: @nav-hover;
                             }
+=======
+#home{
+	display: flex;
+	border-top: 10px solid @button-bg;
+	background: @header-bg;
+	width: 98%;
+	margin: 1%;
 
-                    }
-            }
-    }
+	nav{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 50%;
+		margin-left: 50%;
+
+		a{
+			font-family: @fontTitle;
+			color: white;
+			&:hover{
+				color: @button-bg;
+			}
+		}
+	}
+}
+
+@media @tablet {
+	#home nav{
+		width: 100%;
+		margin-left: 0%;
+	}
+}
+
+@media @mobile {
+	#home nav{
+		width: 100%;
+		margin-left: 0%;
+>>>>>>> 67a8b32c8c63efdb738ea173279e70dd16ee563f
+
+		a{
+			font-size: 9px;
+		}
+	}
+}

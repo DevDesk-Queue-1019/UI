@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .form-elements {
     width: 100%;
     padding: 12px;
@@ -6,3 +7,32 @@
     margin-bottom: 16px;
     color: #000;
 }
+=======
+// Parametric Mixins: fancy class we can use over and over agian. 
+.btn() {
+    display: block;
+    background: @colorB;
+    margin: 0 1% 2%;
+    cursor: grab;
+    width: 98%;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+    font-family:@fontTitle;
+    @media @mobile{
+        font-size:15px;
+      }
+      &:hover {
+        background: #2f2c4b;
+        color: #BB1333;
+      } 
+    }
+
+    .flex(@justify,@align){
+      display:flex;
+      justify-content:@justify;
+      align-items: @align;
+    }
+  
+    
+>>>>>>> 67a8b32c8c63efdb738ea173279e70dd16ee563f
