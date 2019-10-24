@@ -5,13 +5,16 @@ footer {
     .footer-section {
         display: flex;
         flex: 1;
-        margin: 0 auto;
-        max-width: 1000px;
+        .container-width;
         border-radius: 50px 50px 0 0;
         background: @section-bg;
 
-        @media @mobile {
+        @media @tablet {
             border-radius: 0px;
+        }
+
+        @media @mobile {
+            flex-direction: column-reverse;
         }
 
         .footer-box {
@@ -21,13 +24,32 @@ footer {
             padding: 5%;
             width: 200px;
 
+            @media @mobile {
+                width: 100%;
+                text-align: center;
+            }
+
             &:nth-of-type(1) {
                 border-radius: 50px 0 0;
                 background: #521324;
 
-                @media @mobile {
+                @media @tablet {
                     border-radius: 0px;
                 }
+
+                ul {
+                    @media @mobile {
+                        display: flex;
+                        font-size: .6rem;
+                        text-transform: uppercase;
+                    }
+                    li {
+                        display: table-row;
+                        padding: 1%;
+                        line-height: 1px;
+                    }
+                }
+
             }
 
             .footer-links {
@@ -35,6 +57,14 @@ footer {
                 img {
                     max-width: 40%;
                     padding: 2%;
+
+                    &:hover {
+                        padding: 15px;
+                    }
+
+                    @media @mobile {
+                        max-width: 20%;
+                    }
                 }
             }
 
@@ -47,6 +77,7 @@ footer {
                 border: 0px;
                 cursor: pointer;
                 border-radius: 5px;
+
                 &:hover {
                     background: @button-bg;
                 }
@@ -64,11 +95,18 @@ footer {
                 }
             }
 
-            a{
-                color: white;
-                text-decoration: none;
+            a {
                 line-height: 30px;
             }
         }
+    }
+
+    .copyright {
+        .flex-center;
+        .container-width;
+        background: @main-bg;
+        text-transform: uppercase;
+        padding: 20px;
+        font-size: .7rem;
     }
 }

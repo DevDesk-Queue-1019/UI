@@ -1,343 +1,350 @@
-header { // MAIN HEADER
-    display: flex;
-    max-width: 1000px;
-    border-radius: 50px 50px 0 0;
-    border-top: 5px solid #521324;
-    height: 430px;
-    margin: 0 auto;
-    background: @section-bg;
+header {
+	background: @header-bg;
 
-    @media @mobile {
-        height: 430px;
-        border-radius: 0px;
-    }
+	.container {
+		display: flex;
+		.container-width;
+		border-radius: 50px 50px 0 0;
+		border-top: 5px solid #521324;
+		height: 430px;
+		background: @section-bg;
 
-        .ctal { // LEFT SIDE OF HEADER SECTION WITH SHIELD
-            display: flex;
-            width: 40%;
-            justify-content: center;
-            align-items: center;
+		@media @tablet {
+			border-radius: 0px;
+		}
+	}
 
-            @media @mobile {
-                width: 0px;
-            }
-            img {
-                
-                @media @mobile {
-                    display: none;
-                }
-            }
-        }
+	.cta-left {
+		// LEFT SIDE OF HEADER SECTION WITH SHIELD
+		.flex-center;
+		width: 40%;
 
-        .ctar { // RIGHT SIDE OF HEADER SECTION WITH DEVDESK QUEUE AND BUTTON
-            display: flex;
-            flex-direction: column;
-            width: 60%;
-            justify-content: center;
-            align-items: center;
+		@media @tablet {
+			width: 0px;
+		}
+		img {
 
-            @media @mobile {
-                width: 100%;
-            }
+			@media @tablet {
+				display: none;
+			}
+		}
+	}
 
-                .devdesk { // DEVDESK HEADER TEXT
-                    font-size: 4rem;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    color: white;
+	.cta-right {
+		// RIGHT SIDE OF HEADER SECTION WITH DEVDESK QUEUE AND BUTTON
+		.flex-center;
+		flex-direction: column;
+		width: 60%;
 
-                    @media @mobile {
-                        font-size: 4.6rem;
-                    }
-                }
+		@media @tablet {
+			width: @full-width;
+		}
 
-                .queue { // QUEUE HEADER TEXT
-                    font-size: 6rem;
-                    text-transform: uppercase;
-                    font-weight: 100;
-                    color: white;
-                    margin-bottom: 50px;
+		.devdesk {
+			// DEVDESK HEADER TEXT
+			font-size: 4rem;
+			font-weight: 700;
+			letter-spacing: 2px;
 
-                    @media @mobile {
-                        font-size: 7rem;
-                    }
-                }
-                a { // GET STARTED TEXT INSIDE BUTTON
-                    color: white;
+			@media @tablet {
+				font-size: 4.6rem;
+			}
+		}
 
-                        .button { // HEADER CALL TO ACTION BUTTON
-                            display:flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 200px;
-                            height: 70px;
-                            padding: 20px;
-                            background: @button-bg;
-                            border-radius: 10px;
+		.queue {
+			// QUEUE HEADER TEXT
+			font-size: 6rem;
+			font-weight: 100;
 
-                            @media @mobile {
-                                width: 150px;
-                                height: 50px;
-                                border-radius: 5px;
-                            }
+			@media @tablet {
+				font-size: 7rem;
+			}
+		}
+			.button {
+				// HEADER CALL TO ACTION BUTTON
+				.flex-center;
+				width: 200px;
+				height: 70px;
+				padding: 20px;
+				background: @button-bg;
+				border-radius: 10px;
+				margin-top: 35px;
 
-                                &:hover {
-                                    background: #9e162f;
-                                }
-                        }
+				@media @tablet {
+					width: 150px;
+					height: 50px;
+					border-radius: 5px;
+				}
 
-                }
-        }
+				&:hover {
+					background: #9e162f;
+					color:white;
+				}
+			}
+	}
 } // HEADER END HERE
 
-.about { // ABOUT SMALL SECTION
-        box-shadow: inset 0px 70px 61px -48px rgba(0,0,0,0.36);
+.about {// ABOUT SMALL SECTION
+	.box-shadow;
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 40px;
+	.container {
+		.flex-center();
+		.container-width;
+		padding: 40px;
 
-        @media @mobile {
-            flex-direction: column;
-        }
+		@media @tablet {
+			align-items: center;
+			flex-direction: column;
+		}
 
-            .about-text {
-            font-size: 1.5rem;
-            font-weight: 200;
-            width: 60%;
-            border-right: 1px solid #cdd6df;
-            padding-right: 10%;
+		.about-text {
+			font-size: 1.5rem;
+			font-weight: 200;
+			width: 60%;
+			padding-right: 10%;
+			color: black;
 
-            @media @mobile {
-                width: 100%;
-                border-right: 0px;
-                padding-right: 0px;
-            }
+			@media @tablet {
+				width: @full-width;
+				padding-right: 0px;
+				font-size: 1.3rem;
+			}
 
-            @media @tablet {
-                font-size: 1.3rem;
-                border-right: 0px;
-            }
+			p {
+				margin-bottom: 20px;
+			}
+		}
 
-            p {
-                margin-bottom: 20px;
-            }
-        }
+		.about-img {
+			width: 40%;
+			text-align: right;
 
-        .about-img {
-            width: 40%;
-            text-align: right;
+			@media @tablet {
+				width: 80%;
+				text-align: center;
+			}
 
-            @media @mobile {
-                width: 100%;
-                text-align: center;
-            }
+			@media @mobile {
+				width: @full-width;
+			}
 
-            img {
-            width: 100%;
+			img {
+				width: @full-width;
 
-            @media @mobile {
-                width: 400px;
-                padding: 50px 0 50px 0;
-            }
-            }
-        }
-    }
+				@media @mobile {
+					// width: 400px;
+					padding: 50px 0 50px 0;
+				}
+			}
+		}
+	}
 } //END ABOUT
 
-<<<<<<< HEAD
-.feature-section { // FEATURES
-    background: @header-bg;
+.feature-section {
+	// FEATURES
+	background: @header-bg;
 
-    .features {
-=======
-// FEATURES
-.features {
-    max-width: 1000px;
-    margin: 0 auto;
+	.features {
+		.container-width;
+		flex-direction: column;
+		background: @section-bg;
 
-    .feature-title {
->>>>>>> 67a8b32c8c63efdb738ea173279e70dd16ee563f
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 1000px;
-        margin: 0 auto;
-        background: @section-bg;
-        //box-shadow: inset 0px 40px 51px -30px rgba(0,0,0,0.76);
+		.feature-title {
+			.flex-center;
+			height: 200px;
 
-        .feature-title {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 200px;
+			h3 {
+				font-size: 5rem;
+				color: #fff;
+				font-weight: 100;
+				text-transform: uppercase;
+			}
+		}
 
-            h3 {
-                font-size: 5rem;
-                color: #fff;
-                font-weight: 100;
-                text-transform: uppercase;
-            }
-        }
+		.feature-container {
+			.flex-center;
+			flex: 1;
+			flex-wrap: wrap;
+			padding: 0 0 20%;
 
-        .feature-container {
-            display: flex;
-            flex: 1;
-            flex-wrap: wrap;
-            padding: 0 5% 20%;
-            justify-content: space-around;
+			.box {
+				.flex-center;
+				flex-direction: column;
+				flex-wrap: wrap;
+				margin: 30px 20px;
+				width: 250px;
+				height: 250px;
+				border-radius: 10px;
+				background: @main-bg;
 
-            .box {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-transform: uppercase;
-                margin: 20px;
-                width: 250px;
-                height: 250px;
-                background: #dfdfdf;
 
-                @media @tablet {
-                    width: 300px;
-                    height: 300px;
-                }
+				p {
+					text-transform: uppercase;
+				}
 
-                @media @mobile {
-                    width: 400px;
-                    height: 400px;
-                }
+				&:hover::before {
+					.feature-box;
 
-                &:hover {
-                    //background: @header-bg;
-                    color: white;
-                    transition: .4s ease-in-out;
-                    //background-image: url('../img/shield.png');
-                    //background-size: cover;
-                }
-            }
-        }
-    }
+					@media @tablet {
+						.feature-box-media;
+					}
+				}
+
+				&:nth-of-type(1):hover::before {
+					content: "With our Help Desk, students are easily able to reach out to one of our highly educated staff members for support on a number of different topics.";
+				}
+
+				&:nth-of-type(2):hover::before {
+					content: "To ensure tickets keep moving along the queue, we keep status visible and up-to-date on the main dashboard.";
+
+				}
+				&:nth-of-type(3):hover::before {
+					content: "Dev Desk Queue always has helpers waiting to help you with your technical issues. With our backlog, no question will go unanswered.";
+				
+				}
+
+				&:nth-of-type(4):hover::before {
+					content: "We help our students find answers they need with our searchable FAQ and Knowledge Base with built in analytics.";
+
+				}
+
+				&:nth-of-type(5):hover::before {
+					content: "Students are able to view the user manual which demonstrates how to use our help desk more efficiently.";
+
+				}
+
+				&:nth-of-type(6):hover::before {
+					content: "Lambda School's Dev Desk has a number of well educated staff members waiting for any questions which arise from our curious students.";
+
+				}
+
+				img {
+					max-width: 50%;
+					text-align: center;
+					margin-bottom: 15px;
+				}
+
+				@media @tablet {
+					width: 20vh;
+					height: 20vh;
+				}
+			}
+		}
+	}
 } // FEATURES END
 
-.contact-section { // CONTACT SECTION
-    background: @main-bg;
-    padding: 5%;
-    box-shadow: inset 0px 100px 100px -60px rgba(0,0,0,0.25);
+.contact-section {
+	// CONTACT SECTION
+	background: @main-bg;
+	padding: 5%;
+	.box-shadow;
 
-    .contact {
-        display: flex;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 2%;
+	.contact {
+		display: flex;
+		.container-width;
+		padding: 2%;
 
-        @media @mobile {
-            flex-direction: column;
-        }
+		@media @tablet {
+			flex-direction: column;
+		}
 
-            .contact-right { 
-                display: flex;
-                width: 50%;
-                justify-content: center;
-                align-items: center;
-                padding: 2%;
+		.contact-right {
+			.flex-center;
+			width: 50%;
+			padding: 2%;
 
-                @media @mobile {
-                    width: 100%;
-                }
+			@media @tablet {
+				width: @full-width;
+			}
 
-                form {
-                    width: 80%;
+			form {
+				width: 80%;
 
-                    @media @mobile {
-                        margin: 50px 0 50px 0;
-                        width: 100%;
-                    }
+				@media @tablet {
+					margin: 50px 0 50px 0;
+					width: @full-width;
+				}
 
-                    label {
-                        font-size: 1.3rem;
-                        font-weight: 300;
-                        line-height: 25px;
-                    }
+				label {
+					font-size: 1.3rem;
+					font-weight: 300;
+					line-height: 25px;
+				}
 
-                    #fname {
-                        .form-elements;
-                    }
+				#fname {
+					.form-elements;
+				}
 
-                    #lname {
-                        .form-elements;
-                    }
+				#lname {
+					.form-elements;
+				}
 
-                    #subject {
-                        .form-elements;
-                    }
+				#subject {
+					.form-elements;
+				}
 
-                    #message {
-                        .form-elements;
-                        height: 200px;
-                    }
+				#message {
+					.form-elements;
+					height: 200px;
+					resize: none;
+				}
 
-                    input[type="submit"] {
-                        width: 150px;
-                        padding: 10px;
-                        background: @header-bg;
-                        text-transform: uppercase;
-                        border: 0px;
-                        color: white;
-                        border-radius: 5px;
-                        cursor: pointer;
+				input[type="submit"] {
+					width: 150px;
+					padding: 10px;
+					background: @header-bg;
+					text-transform: uppercase;
+					border: 0px;
+					color: white;
+					border-radius: 5px;
+					cursor: pointer;
 
-                        &:hover {
-                            background: @button-bg;
-                        }
-                    }
-                      
-                }
-            }
+					&:hover {
+						background: @button-bg;
+					}
+				}
+			}
+		}
 
-            .contact-left { 
-                display: flex;
-                flex-direction: column;
-                width: 50%;
-                padding: 2%;
-                justify-content: flex-start;
-                align-items: flex-start;
-                border-right: 1px solid #cdd6df;
+		.contact-left {
+			.flex-center(@justify: flex-start;);
+			flex-direction: column;
+			width: 50%;
+			padding: 2%;
 
-                @media @mobile {
-                    width: 100%;
-                    border-right: 0px;
-                    align-items: center;
-                }
+			@media @tablet {
+				width: @full-width;
+			}
 
-                    .contact-text { 
-                        font-size: 5rem;
-                        color: #000;
-                        font-weight: 100;
-                        margin-bottom: 10%;
-                        text-transform: uppercase;
+			.contact-text {
+				font-size: 6vw;
+				color: #000;
+				font-weight: 100;
+				margin-bottom: 10%;
+				text-transform: uppercase;
 
-                        @media @tablet {
-                            font-size: 4rem;
-                        }
+				@media @tablet {
+					font-size: 4rem;
+				}
 
-                        @media @mobile {
-                            margin-bottom: 20%;
-                        }
-                    }
+				@media @mobile {
+					margin-bottom: 20%;
+				}
+			}
 
-                    p {
-                        font-size: 1.5rem;
-                        font-weight: 100;
-                        color: #000;
+			p {
+				font-size: 1.5rem;
+				font-weight: 100;
+				color: #000;
 
-                        @media @tablet {
-                            font-size: 1.3rem;
-                        }
-                        
-                    }
-            }
-    } 
-}// CONTACT END
+				&:nth-of-type(2) {
+					margin-top: 20px;
+				}
+
+				@media @tablet {
+					font-size: 1.3rem;
+				}
+			}
+		}
+	}
+} // CONTACT END

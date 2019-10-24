@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .form-elements {
     width: 100%;
     padding: 12px;
@@ -7,8 +6,42 @@
     margin-bottom: 16px;
     color: #000;
 }
-=======
-// Parametric Mixins: fancy class we can use over and over agian. 
+
+.container-width(@margin: 0 auto; @max-width: 1000px;) {
+    margin: @margin;
+    max-width: @max-width;
+}
+
+.flex-center(@display: flex; @justify: center; @align: center) {
+  display: @display;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.feature-box(@box-position: absolute; @box-display: flex; @box-align: center; @box-filter: opacity(90%); @box-height: 20vh; @box-width: 20vh; @box-font-size: 1rem; @box-line-height: 20px; @box-font-weight: 400; @box-bg: @main-bg) {
+  position: @box-position;
+  display: @box-display;
+  align-items: @box-align;
+  filter: @box-filter;
+  height: @box-height;
+  width: @box-width;
+  font-size: @box-font-size;
+  line-height: @box-line-height;
+  font-weight: @box-font-weight;
+  background: @box-bg;
+}
+
+.feature-box-media {
+  width: 15vh;
+  height: 15vh;
+  font-size: 0.9rem;
+  line-height: 15px;
+}
+
+.box-shadow {
+  box-shadow: inset 0px 100px 100px -60px rgba(0, 0, 0, 0.25);
+}
+// Catherine Kim's Parametric Mixins: fancy class we can use over and over again. 
 .btn() {
     display: block;
     background: @colorB;
@@ -35,4 +68,3 @@
     }
   
     
->>>>>>> 67a8b32c8c63efdb738ea173279e70dd16ee563f
